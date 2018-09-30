@@ -1,0 +1,10 @@
+{
+	"X": "X1",
+	"O": "O1",
+	"PlayerTurnX": "Player Turn: X1",
+	"PlayerTurnO": "Player Turn: O1",
+	"PlayAgain": "Play Again!",
+	"Winner": "Winner",
+	"GotoStart": "Move to Start Position",
+	"MoveToPosition": "Move to Position"
+}

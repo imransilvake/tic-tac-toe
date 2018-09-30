@@ -1,0 +1,21 @@
+@import '../assets/scss/base/global';
+
+.cd-square {
+	background-color: cd-palette($cd-background, 2001);
+	border: 1px solid cd-palette($cd-border, 3003);
+	box-shadow: 1px 1px 1px #f3eded;
+	float: left;
+	font-size: 24px;
+	font-weight: bold;
+	height: 50px;
+	line-height: 50px;
+	margin-right: -1px;
+	margin-top: -1px;
+	padding: 0;
+	text-align: center;
+	width: 50px;
+
+	&:focus {
+		outline: none;
+	}
+}

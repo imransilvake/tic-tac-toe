@@ -1,0 +1,7 @@
+.cd-board-row {
+	&:after {
+		clear: both;
+		content: '';
+		display: table;
+	}
+}

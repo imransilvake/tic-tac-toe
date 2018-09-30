@@ -1,0 +1,82 @@
+@import '../assets/scss/base/global';
+
+.cd-game-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 25px;
+
+	.cd-menu {
+		background-color: cd-palette($cd-background, 2015);
+		bottom: 0;
+		color: cd-palette($cd-color, 1001);
+		left: 0;
+		overflow-y: auto;
+		position: fixed;
+		top: 0;
+		width: 300px;
+
+		.cd-info {
+			text-align: center;
+
+			h2 {
+				background-color: cd-palette($cd-background, 2020);
+				border-bottom: 1px solid cd-palette($cd-border, 3021);
+				color: cd-palette($cd-color, 1001);
+				padding: 10px 20px;
+			}
+
+			.cd-status {
+				background-color: cd-palette($cd-background, 2002);
+				border-top: 1px solid cd-palette($cd-border, 3021);
+				color: cd-palette($cd-color, 1009);
+				margin-bottom: 15px;
+				padding: 10px;
+			}
+
+			.cd-play-again {
+				margin-bottom: 15px;
+
+				button {
+					background-color: cd-palette($cd-background, 2010);
+					border: 1px solid cd-palette($cd-border, 3019);
+					box-shadow: 1px 1px 1px cd-palette($cd-shadow, 4019);
+					color: cd-palette($cd-color, 1001);
+					cursor: pointer;
+					padding: 4px 10px;
+
+					&:hover {
+						opacity: .9;
+					}
+				}
+			}
+
+			.cd-moves {
+				list-style: none;
+				margin: 0 0 15px;
+				padding: 0;
+
+				li {
+					margin-bottom: 5px;
+
+					button {
+						background-color: cd-palette($cd-background, 2021);
+						border: 1px solid cd-palette($cd-border, 3021);
+						box-shadow: 1px 1px 1px cd-palette($cd-shadow, 4021);
+						color: cd-palette($cd-color, 1001);
+						cursor: pointer;
+						padding: 4px 10px;
+
+						&:hover {
+							opacity: .9;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.cd-board {
+		margin-left: 300px;
+	}
+}

@@ -1,0 +1,6 @@
+// style - 1
+.ts-content-style {
+	background-color: cd-palette($cd-background, 2001);
+	box-shadow: 0 1px 3px cd-palette($cd-shadow, 4000, .1), 0 1px 1px cd-palette($cd-shadow, 4000, .15);
+	padding: 20px;
+}
