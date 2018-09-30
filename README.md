@@ -8,6 +8,7 @@
 ![Alt text](preview.png?raw=true "tic-tac-toe")
 
 ## Learning Things:
+- React Basics
 - Components: Inputs & Outputs (Data Pass)
 - Conditional Statements
 - SCSS Inclusion
