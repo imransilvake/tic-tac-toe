@@ -13,6 +13,4 @@
 - SCSS Inclusion
 
 ## Todo
-- [ ] SCSS encapsulation
 - [ ] Language Switch (i18n)
-- [ ] Final Style
