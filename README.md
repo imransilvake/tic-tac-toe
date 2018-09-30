@@ -1,4 +1,4 @@
-# tic-tac-toe:
+# Tic-Tac-Toe:
 
 - Lets you play tic-tac-toe.
 - Indicates when a player has won the game.
