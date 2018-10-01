@@ -7,11 +7,8 @@
 
 ![Alt text](preview.png?raw=true "tic-tac-toe")
 
-## Learning Things:
+## Learning:
 - React Basics
 - Components: Inputs & Outputs (Data Pass)
 - Conditional Statements
 - SCSS Inclusion
-
-## Todo
-- [ ] Language Switch (i18n)
