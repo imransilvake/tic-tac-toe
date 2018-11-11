@@ -4,7 +4,7 @@
 		$color: map-get($palette, $hex-code);
 		$opacity: if($opacity == null, opacity($color), $opacity);
 
-		@if ($opacity >= 0 and $opacity <=1) {
+		@if $opacity >= 0 and $opacity <=1 {
 			@return rgba($color, $opacity);
 		} @else {
 			@error 'Opacity value `#{$opacity}` must range from 0-1.';

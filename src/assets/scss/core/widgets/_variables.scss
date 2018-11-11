@@ -1,9 +1,9 @@
 // === Tooltip === //
-$cd-tooltip-bg-color:       cd-palette($cd-background, 2000, .8) !default;
-$cd-tooltip-arrow-color:    cd-palette($cd-border, 3000, .8) !default;
+$cd-tooltip-bg-color:       cd-palette($cd-background, 2000, .8);
+$cd-tooltip-arrow-color:    cd-palette($cd-border, 3000, .8);
 $cd-tooltip-shadow-color:   cd-palette($cd-shadow, 4000, .1);
-$cd-tooltip-color:          cd-palette($cd-color, 1001) !default;
-$cd-tooltip-font-size:      cd-fontSize(s14) !default;
+$cd-tooltip-color:          cd-palette($cd-color, 1001);
+$cd-tooltip-font-size:      cd-fontSize(s14);
 $cd-tooltip-margin:         14px;
 
 // === Modal === //

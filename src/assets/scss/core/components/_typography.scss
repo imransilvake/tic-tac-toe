@@ -6,8 +6,9 @@ body {
 
 h1, h2, h3, h4, h5, h6, p {  margin: 0; }
 
-h1, h2, h3, h4, h5, h6, a { font-weight: cd-fontWeight(500); }
-p, span { font-weight: cd-fontWeight(400); }
+h1, h2, h3, h4, h5, h6 { font-weight: cd-fontWeight(500); }
+p, span, a { font-weight: cd-fontWeight(400); }
+b, strong {font-weight: cd-fontWeight(700); }
 
 span { font-size: cd-fontSize(s15); }
 h1 { font-size: cd-fontSize(h1); }
@@ -18,9 +19,6 @@ h5 { font-size: cd-fontSize(h5); }
 h6 { font-size: cd-fontSize(h6); }
 p { font-size: cd-fontSize(s15); }
 a { font-size: cd-fontSize(s15); }
-b, strong {
-	font-weight: cd-fontWeight(700);
-}
 
 code {
 	background-color: cd-palette($cd-background, 2003);

@@ -35,7 +35,7 @@
 	$direction: '';
 
 	// Check direction based on platform.
-	@if ($platform == $platform-desktop) {
+	@if $platform == $platform-desktop {
 		$direction: $down
 	} @else {
 		$direction: $up
@@ -48,7 +48,7 @@
 		// media queries
 		@include cd-media($platform, $device) {
 			// exclude widescreen for desktop platform and mini for mobile desktop: redundancy
-			@if ($platform == $platform-desktop and $deviceFirstLetter != 'w' or $platform == $platform-mobile and $deviceFirstLetter != 'm') {
+			@if $platform == $platform-desktop and $deviceFirstLetter != 'w' or $platform == $platform-mobile and $deviceFirstLetter != 'm' {
 				.cd-hide-on-#{$deviceFirstLetter}-#{$direction} {
 					display: none;
 				}
@@ -64,6 +64,10 @@
 
 .cd-disable-overflow {
 	overflow-y: scroll;
+
+	* {
+		overflow: hidden;
+	}
 }
 
 // === Position === //
@@ -103,4 +107,11 @@
 	&:hover {
 		opacity: .9;
 	}
+}
+
+// === List Style === //
+.cd-remove-bullets, .cd-remove-bullets-nested ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }

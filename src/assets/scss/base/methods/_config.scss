@@ -38,15 +38,18 @@ $cd-gutter: 	15px !default;
 
 // Z Index: z-index
 $cd-zIndex: (
-	normal:	1,
-	float:	2,
-	modal:	3,
-	loader:	4
+	hide:		-1,
+	initial:	0,
+	normal:		1,
+	float:		2,
+	modal:		3,
+	loader:		4
 );
 
 // Font Family: font-family
 $cd-fontFamily: (
-	roboto:	'Roboto'
+	roboto:		'Roboto',
+	comics-san:	'Comic Sans MS'
 );
 
 // Font Size: font-size
@@ -68,6 +71,8 @@ $cd-fontSize: (
 	s18:    18px,
 	s19:    19px,
 	s20:    20px,
+	se1:    1rem,
+	se2:    2rem,
 	se3:    3rem,
 	se4:    4rem,
 	se5:    5rem,
@@ -87,7 +92,7 @@ $cd-fontWeight: (
 	900: 	900
 );
 
-// Line Height: line-height
+// Line Height line-height
 $cd-lineHeight: (
 	1:		1,
 	1.1:	1.1,
@@ -101,5 +106,8 @@ $cd-lineHeight: (
 	1.9: 	1.9,
 	2:		2,
 	2.1:	2.1,
-	2.2:	2.2
+	2.2:	2.2,
+	2.3:	2.3,
+	2.4:	2.4,
+	2.5:	2.5
 );

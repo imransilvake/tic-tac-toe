@@ -6,8 +6,8 @@
 		$platform: map-get($cd-devicePoints, $platformFirst);
 
 		// breakpoint with orientation
-		@if ($orientation != '') {
-			@if ($orientation == 'portrait' or $orientation == 'landscape') {
+		@if $orientation != '' {
+			@if $orientation == 'portrait' or $orientation == 'landscape' {
 				// orientation
 				@include cd-orientation($orientation) {
 					// breakpoint
