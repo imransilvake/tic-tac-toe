@@ -30,7 +30,6 @@ export default class Game extends React.Component {
         const current = history[this.state.stepNumber];
         const winner = Game.calculateWinner(current.squares);
         const status = (winner) ? `${ Texts.Winner }: ${ winner }` : (this.state.xTurn) ? Texts.PlayerTurnX : Texts.PlayerTurnO;
-
         const moves = history.map((move, index) => {
             const desc = index ? `${ Texts.MoveToPosition }: ${ index }` : Texts.GotoStart;
             return (
@@ -39,7 +38,7 @@ export default class Game extends React.Component {
                 </li>
             );
         });
-        const resetBoard = (winner) ? <button onClick={ this.playAgain.bind(this) }>{ Texts.PlayAgain }</button> : null;
+        const resetBoard = (winner) ? <button onClick={ this.gameReset.bind(this) }>{ Texts.PlayAgain }</button> : null;
 
         return (
             <div className="cd-game-wrapper">
@@ -128,9 +127,9 @@ export default class Game extends React.Component {
     }
 
     /**
-     * play again: reset
+     * game reset
      */
-    playAgain() {
+    gameReset() {
         this.setState({
             history: [{
                 squares: Array(9).fill(null)
