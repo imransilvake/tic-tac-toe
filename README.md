@@ -1,5 +1,4 @@
-# Tic-Tac-Toe:
-
+# Tic-Tac-Toe
 - Lets you play tic-tac-toe.
 - Indicates when a player has won the game.
 - Stores a game’s history as a game progresses.
@@ -7,8 +6,18 @@
 
 ![Alt text](preview.png?raw=true "tic-tac-toe")
 
-## Learning:
+## Learning
 - React Basics
 - Components: Inputs & Outputs (Data Pass)
 - Conditional Statements
 - SCSS Inclusion
+
+## Run
+```
+npm install
+npm start
+
+or
+yarn install
+yarn start
+```
