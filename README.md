@@ -8,19 +8,23 @@ A game developed using React JavaScript Library over a modern and famous seed [c
 
 ![Alt text](preview.png?raw=true "tic-tac-toe")
 
+
 ## Learning
 - React Basics
 - Components: Inputs & Outputs (Data Pass)
 - Conditional Statements
 - SCSS Inclusion
 
-## Run
+
+## Packages Update & Install
 ```
-npm install
-npm start
+update: yarn update
+install: yarn install
+```
 
-or
 
-yarn install
-yarn start
+## Serve & Build
+```
+serve: yarn start
+build: yarn run build
 ```
