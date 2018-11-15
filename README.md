@@ -1,4 +1,6 @@
 # Tic-Tac-Toe
+A game built using React Framework using [create-react-app](https://github.com/facebook/create-react-app).
+
 - Lets you play tic-tac-toe.
 - Indicates when a player has won the game.
 - Stores a game’s history as a game progresses.
