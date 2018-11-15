@@ -6,6 +6,11 @@
 	}
 }
 
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
 // === User Selection === //
 ::selection {
 	background-color: cd-palette($cd-background, 2010);

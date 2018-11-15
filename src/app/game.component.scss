@@ -79,4 +79,22 @@
 	.cd-board {
 		margin-left: 300px;
 	}
+
+	// media
+	@include cd-media(desktop, smartphone) {
+		display: block;
+		flex-direction: unset;
+		justify-content: unset;
+		margin: 0;
+
+		.cd-menu {
+			position: static;
+			width: auto;
+		}
+
+		.cd-board {
+			margin: 25px auto 0;
+			width: 150px;
+		}
+	}
 }
