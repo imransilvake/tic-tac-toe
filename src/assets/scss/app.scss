@@ -1,2 +1,8 @@
-// app
+// Base
+@import 'base/global';
+
+// App
+@import 'app/global';
+
+// Components
 @import '../../app/global';
