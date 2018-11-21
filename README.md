@@ -9,7 +9,7 @@ A game developed using React JavaScript Library over a modern and famous seed [c
 ![Alt text](preview.png?raw=true "tic-tac-toe")
 
 
-## Learning
+## Content
 - React Basics
 - Components: Inputs & Outputs (Data Pass)
 - Conditional Statements
