@@ -16,6 +16,14 @@ A game developed using React JavaScript Library over a modern and famous seed [c
 - SCSS Inclusion
 
 
+## Libraries and Framework
+#### Internal
+- [X] [SCSS Framework](https://github.com/imransilvake/SCSS-Framework)
+
+#### External 
+- [X] [Create React App](https://github.com/facebook/create-react-app)
+
+
 ## Packages Update & Install
 ```
 update: yarn update
