@@ -1,5 +1,5 @@
 # Tic-Tac-Toe
-A game developed using React JavaScript Library over a modern and famous seed [create-react-app](https://github.com/facebook/create-react-app).
+A game developed using React JavaScript Library on top of a modern and famous seed: [create-react-app](https://github.com/facebook/create-react-app)
 
 - Lets you play tic-tac-toe.
 - Indicates when a player has won the game.
