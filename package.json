@@ -9,7 +9,7 @@
 		"eject": "react-scripts eject"
 	},
 	"dependencies": {
-		"@imransilvake/scss-framework": "^2.0.2",
+		"@imransilvake/scss-framework": "^2.0.4",
 		"node-sass": "^4.10.0",
 		"react": "^16.6.3",
 		"react-dom": "^16.6.3",
