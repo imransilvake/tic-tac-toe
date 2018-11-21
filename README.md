@@ -16,7 +16,7 @@ A game developed using React JavaScript Library on top of a modern and famous se
 - SCSS Inclusion
 
 
-## Libraries and Framework
+## Libraries and Frameworks
 #### Internal
 - [X] [SCSS Framework](https://github.com/imransilvake/SCSS-Framework)
 
