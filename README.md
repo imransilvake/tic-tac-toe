@@ -11,7 +11,7 @@ A game developed using React JavaScript Library over a modern and famous seed [c
 
 ## Content
 - React Basics
-- Components: Inputs & Outputs (Data Pass)
+- Data Flow: Inputs & Outputs (between Components)
 - Conditional Statements
 - SCSS Inclusion
 
@@ -24,14 +24,14 @@ A game developed using React JavaScript Library over a modern and famous seed [c
 - [X] [Create React App](https://github.com/facebook/create-react-app)
 
 
-## Packages Update & Install
+## Commands
+#### Update & Install
 ```
 update: yarn update
 install: yarn install
 ```
 
-
-## Serve & Build
+#### Serve & Build
 ```
 serve: yarn start
 build: yarn run build
