@@ -24,15 +24,5 @@ A game developed using React JavaScript Library on top of a modern and famous se
 - [X] [Create React App](https://github.com/facebook/create-react-app)
 
 
-## Commands
-#### Update & Install
-```
-update: yarn update
-install: yarn install
-```
-
-#### Serve & Build
-```
-serve: yarn start
-build: yarn run build
-```
+## Information
+Check [React-Seed](https://github.com/imransilvake/React-Seed) to understand how to build and serve this project as well as how to use SCSS and JS linting.
