@@ -5,12 +5,12 @@ import * as serviceWorker from './serviceWorker';
 
 // app
 import './styles.scss';
-import Game from './app/game.component';
+import './assets/i18n/i18n';
+import App from './app/app';
 
-// bootstrap app
 ReactDOM.render(
-    <Game />,
-    document.getElementById('root')
+	<App/>,
+	document.getElementById('root')
 );
 
 // If you want your app to work offline and load faster, you can change

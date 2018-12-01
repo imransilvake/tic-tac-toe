@@ -1,25 +1,44 @@
 {
-	"name": "tic-tac-toe",
-	"version": "0.1.0",
-	"private": true,
-	"scripts": {
-		"start": "react-scripts start",
-		"build": "react-scripts build"
-	},
-	"dependencies": {
-		"@imransilvake/scss-framework": "^2.0.6",
-		"node-sass": "^4.10.0",
-		"react": "^16.6.3",
-		"react-dom": "^16.6.3",
-		"react-scripts": "2.1.1"
-	},
-	"eslintConfig": {
-		"extends": "react-app"
-	},
-	"browserslist": [
-		">0.2%",
-		"not dead",
-		"not ie <= 11",
-		"not op_mini all"
-	]
+    "name": "slack-chat-app",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "start": "REACT_APP_ENV=development react-scripts start",
+        "build": "sh -ac './src/environment/ .env.${REACT_APP_ENV}; react-scripts build'",
+        "build:development": "REACT_APP_ENV=development npm run build",
+        "build:staging": "REACT_APP_ENV=staging npm run build",
+        "build:production": "REACT_APP_ENV=production npm run build",
+        "serve": "serve -s build",
+        "lint:scss": "stylelint '**/*.scss'; exit 0",
+        "lint:es": "eslint --ext .jsx --ext .js src/"
+    },
+    "dependencies": {
+        "@imransilvake/scss-framework": "^2.0.6",
+        "classnames": "^2.2.6",
+        "i18next": "^12.1.0",
+        "i18next-browser-languagedetector": "^2.2.4",
+        "md5": "^2.2.1",
+        "prop-types": "latest",
+        "react": "^16.6.3",
+        "react-dom": "^16.6.3",
+        "react-i18next": "^8.3.8",
+        "react-redux": "^5.1.1",
+        "react-router-dom": "^4.3.1",
+        "react-scripts": "2.1.1",
+        "redux": "^4.0.1",
+        "redux-devtools-extension": "^2.13.7"
+    },
+    "devDependencies": {
+        "eslint-config-airbnb": "^17.1.0",
+        "eslint-plugin-react": "^7.11.1",
+        "node-sass": "^4.10.0",
+        "stylelint": "^9.9.0",
+        "stylelint-order": "^2.0.0"
+    },
+    "browserslist": [
+        ">0.2%",
+        "not dead",
+        "not ie <= 11",
+        "not op_mini all"
+    ]
 }
