@@ -22,7 +22,7 @@ A game developed using React JavaScript Library on top of [React-Seed](https://g
 
 #### External 
 - [X] [Create React App](https://github.com/facebook/create-react-app)
-
+- [X] [Translation](https://github.com/i18next/react-i18next)
 
 ## Information
 Check [React-Seed](https://github.com/imransilvake/React-Seed) to understand how to build and serve this project as well as how to use SCSS and JS linting.
