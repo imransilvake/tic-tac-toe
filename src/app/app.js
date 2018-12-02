@@ -21,6 +21,11 @@ export default class Game extends Component {
 		const { history } = this.state;
 		const current = history[this.state.stepNumber];
 		const winner = Game.calculateWinner(current.squares);
+		const resetBoard = (winner) ? <button type="button" onClick={this.resetGame}>{i18n.t('PLAY_AGAIN')}</button> : null;
+		let status = `${i18n.t('WINNER')}: ${winner}`;
+		if (!winner) {
+			status = (this.state.xTurn) ? i18n.t('PLAYER_TURN_X') : i18n.t('PLAYER_TURN_O');
+		}
 		const moves = history.map((move, index) => {
 			const desc = index ? `${i18n.t('MOVE_TO_POSITION')}: ${index}` : i18n.t('GOTO_START');
 			return (
@@ -29,16 +34,6 @@ export default class Game extends Component {
 				</li>
 			);
 		});
-
-		let status = '';
-		if (winner) {
-			status = `${i18n.t('WINNER')}: ${winner}`;
-		} else {
-			status = (this.state.xTurn) ? i18n.t('PLAYER_TURN_X') : i18n.t('PLAYER_TURN_O');
-		}
-
-		const resetBoard = (winner)
-			? <button type="button" onClick={this.resetGame}>{i18n.t('PLAY_AGAIN')}</button> : null;
 
 		return (
 			<div className="cd-game-wrapper">
