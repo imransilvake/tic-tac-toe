@@ -6,7 +6,7 @@ A game developed using React JavaScript Library on top of [React-Seed](https://g
 - Stores a game’s history as a game progresses.
 - Allows players to review a game’s history and see previous versions of a game’s board.
 
-![Alt text](preview.png?raw=true "tic-tac-toe")
+![Alt text](preview.fig?raw=true "tic-tac-toe")
 
 
 ## Content
