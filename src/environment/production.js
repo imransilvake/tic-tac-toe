@@ -1,6 +1,6 @@
 const production = {
 	ROUTING: {
-		HOME: '/'
+		GAME: '/'
 	}
 };
 
