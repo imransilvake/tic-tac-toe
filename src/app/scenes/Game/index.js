@@ -5,7 +5,7 @@ import React, { Component } from 'react';
 import Board from './components/Board';
 import i18n from '../../../assets/i18n/i18n'
 
-export default class Game extends Component {
+class Game extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -108,6 +108,12 @@ export default class Game extends Component {
 			stepNumber: historyUpdate.length,
 			xTurn: !xTurn
 		});
+
+		// reset game if no winner
+		const filledSquares = squares && squares.filter(x => x !== null).length;
+		if (filledSquares === 9) {
+			this.resetGame();
+		}
 	};
 
 	/**
@@ -135,3 +141,5 @@ export default class Game extends Component {
 		});
 	};
 }
+
+export default Game;

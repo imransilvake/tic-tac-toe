@@ -1,7 +1,7 @@
 // react
 import React from 'react';
 
-export default function Square(props) {
+function Square(props) {
 	return (
 		<button
 			type="button"
@@ -11,3 +11,5 @@ export default function Square(props) {
 		</button>
 	);
 }
+
+export default Square;

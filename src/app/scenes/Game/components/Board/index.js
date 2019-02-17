@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 // app
 import Square from './components/Square';
 
-export default class Board extends Component {
+class Board extends Component {
 	render() {
 		return (
 			<div>
@@ -42,3 +42,5 @@ export default class Board extends Component {
 		);
 	}
 }
+
+export default Board;

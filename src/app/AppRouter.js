@@ -4,7 +4,7 @@ import { Route, Switch, withRouter } from 'react-router-dom';
 
 // app
 import ENV from '../environment/index';
-import Component404 from './scenes/404/Component404';
+import C404 from './scenes/404';
 import Game from './scenes/Game';
 
 class AppRouter extends Component {
@@ -12,7 +12,7 @@ class AppRouter extends Component {
 		return (
 			<Switch>
 				<Route exact path={ENV.ROUTING.GAME} component={Game}/>
-				<Route exact from="*" component={Component404}/>
+				<Route exact from="*" component={C404}/>
 			</Switch>
 		);
 	}
