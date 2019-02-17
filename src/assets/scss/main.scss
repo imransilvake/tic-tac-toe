@@ -1,5 +1,7 @@
 // app
 @import 'app/global';
 
-// layouts - components
-@import 'layouts';
+// game
+@import '../../app/scenes/Game/styles';
+@import '../../app/scenes/Game/components/Board/styles';
+@import '../../app/scenes/Game/components/Board/components/Square/styles';

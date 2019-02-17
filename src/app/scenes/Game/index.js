@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 
 // app
-import Board from './Board';
+import Board from './components/Board';
 import i18n from '../../../assets/i18n/i18n'
 
 export default class Game extends Component {
