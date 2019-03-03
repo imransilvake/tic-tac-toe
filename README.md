@@ -14,6 +14,7 @@ A Tic-Tac-Toe game developed using React JavaScript. It is build on top of [Reac
 - Data Flow: Inputs & Outputs (between Components)
 - Conditional Statements
 - SCSS Inclusion
+- Translation (en/de) *Implemented but not shown visually*
 
 
 ## Libraries and Frameworks
