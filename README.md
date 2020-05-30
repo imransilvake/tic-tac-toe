@@ -6,7 +6,9 @@ A Tic-Tac-Toe game developed using React JavaScript. It is build on top of [Reac
 - Stores a game’s history as a game progresses.
 - Allows players to review a game’s history and see previous versions of a game’s board.
 
-![Alt text](preview.png?raw=true "tic-tac-toe")
+<p align="center">
+	<img src="preview.png">
+</p>
 
 
 ## Content
