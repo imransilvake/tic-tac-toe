@@ -5,6 +5,7 @@ A Tic-Tac-Toe game developed using React JavaScript. It is build on top of [Reac
 - Indicates when a player has won the game.
 - Stores a game’s history as a game progresses.
 - Allows players to review a game’s history and see previous versions of a game’s board.
+- Add support for Internationalization (i18n) - *Implemented but not shown visually*
 
 <p align="center">
 	<img src="preview.png">
@@ -12,11 +13,13 @@ A Tic-Tac-Toe game developed using React JavaScript. It is build on top of [Reac
 
 
 ## Content
-- React Basics
-- Data Flow: Inputs & Outputs (between Components)
-- Conditional Statements
-- SCSS Inclusion
-- Translation (en/de) - *Implemented but not shown visually*
+- [X] Create Data Flow: Inputs & Outputs (between Components)
+- [X] Game History
+	- Store user moves in history
+	- Allow user to review game history
+	- Go Back: Allow user to go back to the previous versions of a game's board.
+- [X] Validate user result: Win or Loss
+- [X] Provide clean and responsive layout
 
 
 ## Libraries and Frameworks
