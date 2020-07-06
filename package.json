@@ -1,12 +1,12 @@
 {
-    "name": "slack-chat-app",
+    "name": "tic-tac-toe",
     "version": "1.0.0",
     "private": true,
     "scripts": {
         "start": "REACT_APP_ENV=development react-scripts start",
         "build": "sh -ac './src/environment/ .env.${REACT_APP_ENV}; react-scripts build'",
         "build:development": "REACT_APP_ENV=development npm run build",
-        "build:staging": "REACT_APP_ENV=staging npm run build",
+        "build:next": "REACT_APP_ENV=next npm run build",
         "build:production": "REACT_APP_ENV=production npm run build",
         "serve": "serve -s build",
         "lint:scss": "stylelint '**/*.scss'; exit 0",
@@ -15,27 +15,27 @@
         "eject": "react-scripts eject"
     },
     "dependencies": {
-        "@imransilvake/scss-framework": "^2.0.7",
-        "classnames": "^2.2.6",
-        "i18next": "^15.0.4",
-        "i18next-browser-languagedetector": "^3.0.0",
-        "md5": "^2.2.1",
+        "@imransilvake/scss-framework": "2.0.7",
+        "classnames": "2.2.6",
+        "i18next": "15.0.4",
+        "i18next-browser-languagedetector": "3.0.0",
+        "md5": "2.2.1",
         "prop-types": "latest",
-        "react": "^16.8.2",
-        "react-dom": "^16.8.2",
-        "react-i18next": "^10.1.2",
-        "react-redux": "^6.0.0",
-        "react-router-dom": "^4.3.1",
+        "react": "16.8.2",
+        "react-dom": "16.8.2",
+        "react-i18next": "10.1.2",
+        "react-redux": "6.0.0",
+        "react-router-dom": "4.3.1",
         "react-scripts": "2.1.5",
-        "redux": "^4.0.1",
-        "redux-devtools-extension": "^2.13.8"
+        "redux": "4.0.1",
+        "redux-devtools-extension": "2.13.8"
     },
     "devDependencies": {
-        "eslint-config-airbnb": "^17.1.0",
-        "eslint-plugin-react": "^7.12.4",
-        "node-sass": "^4.11.0",
-        "stylelint": "^9.10.1",
-        "stylelint-order": "^2.0.0"
+        "eslint-config-airbnb": "17.1.0",
+        "eslint-plugin-react": "7.12.4",
+        "node-sass": "4.11.0",
+        "stylelint": "9.10.1",
+        "stylelint-order": "2.0.0"
     },
     "browserslist": [
         ">0.2%",

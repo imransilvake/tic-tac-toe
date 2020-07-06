@@ -1,7 +1,8 @@
+// app
+import appRoutes from './app-routes';
+
 const production = {
-	ROUTING: {
-		GAME: '/'
-	}
+	ROUTING: appRoutes
 };
 
 export default production;
