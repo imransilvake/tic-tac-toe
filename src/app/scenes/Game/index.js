@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 
 // app
 import Board from './components/Board';
-import i18n from '../../../assets/i18n/i18n'
+import i18n from '../../../assets/i18n/i18n';
 
 class Game extends Component {
 	constructor(props) {
