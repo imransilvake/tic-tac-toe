@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 // app
 import Board from './components/Board';
 import i18n from '../../../assets/i18n/i18n';
+import classNames from 'classnames/bind';
 
 class Game extends Component {
 	constructor(props) {
@@ -22,13 +23,19 @@ class Game extends Component {
 		const current = history[stepNumber];
 		const winner = Game.calculateWinner(current.squares);
 
+		// player status
+		const playerStatusClass = classNames({
+			'sc-turn-x': winner === i18n.t('X'),
+			'sc-turn-0': winner === i18n.t('O')
+		});
+
 		// reset board
 		const resetBoard = (winner) ? (
 			<button type="button" onClick={this.resetGame}>{i18n.t('PLAY_AGAIN')}</button>
 		) : null;
 
 		// no winner
-		let status = `${i18n.t('WINNER')}: ${winner}`;
+		let status = (<span className={playerStatusClass}>{i18n.t('WINNER')}: {winner}</span>);
 		if (!winner) {
 			status = (xTurn) ?
 				(<span className="sc-turn-x">{i18n.t('PLAYER_TURN_X')}</span>) :
@@ -55,7 +62,7 @@ class Game extends Component {
 					<h2>Tic-Tac-Toe</h2>
 
 					{/* Status */}
-					<p className="cd-status">{status}</p>
+					<div className="cd-status">{status}</div>
 
 					{/* Board */}
 					<Board

@@ -3,7 +3,7 @@ import React from 'react';
 
 // app
 import classNames from 'classnames/bind';
-import i18n from '../../../../../../../assets/i18n/i18n'
+import i18n from '../../../../../../../assets/i18n/i18n';
 
 function Square(props) {
 	const buttonClass = classNames({
