@@ -2,13 +2,18 @@
 	background-color: cd-palette($cd-background, 2001);
 	border: 1px solid cd-palette($cd-border, 3003);
 	box-shadow: 1px 1px 1px cd-palette($cd-shadow, 4022);
+	color: cd-palette($cd-color, 1016);
 	float: left;
-	font-size: cd-fontSize(s24, $cd-fontSize);
+	font-size: cd-fontSize(s26, $cd-fontSize);
 	font-weight: bold;
-	height: 50px;
+	height: 60px;
 	padding: 0;
 	text-align: center;
-	width: 50px;
+	width: 60px;
+
+	&.sc-player-x {
+		color: cd-palette($cd-color, 1010);
+	}
 
 	&:focus {
 		outline: none;

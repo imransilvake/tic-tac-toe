@@ -1,98 +1,88 @@
 .cd-game-wrapper {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	margin-top: 25px;
-
-	.cd-menu {
-		background-color: cd-palette($cd-background, 2015);
-		bottom: 0;
-		color: cd-palette($cd-color, 1001);
-		left: 0;
-		overflow-y: auto;
-		position: fixed;
-		top: 0;
-		width: 300px;
-
-		.cd-info {
-			text-align: center;
-
-			h2 {
-				background-color: cd-palette($cd-background, 2020);
-				border-bottom: 1px solid cd-palette($cd-border, 3021);
-				color: cd-palette($cd-color, 1001);
-				padding: 10px 20px;
-			}
-
-			.cd-status {
-				background-color: cd-palette($cd-background, 2002);
-				border-top: 1px solid cd-palette($cd-border, 3021);
-				color: cd-palette($cd-color, 1009);
-				margin-bottom: 15px;
-				padding: 10px;
-			}
-
-			.cd-play-again {
-				margin-bottom: 15px;
-
-				button {
-					background-color: cd-palette($cd-background, 2010);
-					border: 1px solid cd-palette($cd-border, 3019);
-					box-shadow: 1px 1px 1px cd-palette($cd-shadow, 4019);
-					color: cd-palette($cd-color, 1001);
-					cursor: pointer;
-					padding: 4px 10px;
-
-					&:hover {
-						opacity: .9;
-					}
-				}
-			}
-
-			.cd-moves {
-				list-style: none;
-				margin: 0 0 15px;
-				padding: 0;
-
-				li {
-					margin-bottom: 5px;
-
-					button {
-						background-color: cd-palette($cd-background, 2021);
-						border: 1px solid cd-palette($cd-border, 3021);
-						box-shadow: 1px 1px 1px cd-palette($cd-shadow, 4021);
-						color: cd-palette($cd-color, 1001);
-						cursor: pointer;
-						padding: 4px 10px;
-
-						&:hover {
-							opacity: .9;
-						}
-					}
-				}
-			}
-		}
-	}
+	margin: 25px auto 0;
+	width: 180px;
 
 	.cd-board {
-		margin-left: 300px;
-	}
-
-	// media
-	@include cd-media(desktop, smartphone) {
-		display: block;
-		flex-direction: unset;
-		justify-content: unset;
-		margin: 0 -15px;
-
-		.cd-menu {
-			position: static;
-			width: auto;
+		h2 {
+			border-bottom: 1px solid cd-palette($cd-border, 3004);
+			font-size: cd-fontSize(s25, $cd-fontSize);
+			margin-bottom: 10px;
+			padding-bottom: 5px;
+			text-align: center;
 		}
 
-		.cd-board {
-			margin: 25px auto 0;
-			width: 150px;
+		.cd-status {
+			margin-bottom: 5px;
+			text-align: center;
+
+			span {
+				font-weight: cd-fontWeight(600);
+
+				&.sc-turn-x {
+					color: cd-palette($cd-color, 1010);
+				}
+
+				&.sc-turn-0 {
+					color: cd-palette($cd-color, 1016);
+				}
+			}
+		}
+	}
+
+	.cd-options {
+		position: relative;
+		text-align: center;
+
+		.cd-moves {
+			list-style: none;
+			margin: 15px 0;
+			padding: 0;
+			text-align: left;
+
+			li {
+				display: inline-block;
+				margin-bottom: 5px;
+				margin-right: 5px;
+				width: 56px;
+
+				&:nth-child(3n) {
+					margin-right: 0;
+				}
+
+				button {
+					background-color: cd-palette($cd-background, 2001);
+					border: 1px solid cd-palette($cd-border, 3001);
+					box-shadow: 1px 1px 1px cd-palette($cd-shadow, 4004);
+					color: cd-palette($cd-color, 1000);
+					cursor: pointer;
+					outline: 0;
+					padding: 5px;
+					text-decoration: none;
+					width: 100%;
+
+					&:hover {
+						background-color: cd-palette($cd-background, 2004);
+					}
+				}
+			}
+		}
+
+		.cd-play-again {
+			margin-top: -5px;
+			text-align: center;
+
+			button {
+				background-color: cd-palette($cd-background, 2010);
+				border: 1px solid cd-palette($cd-border, 3019);
+				box-shadow: 1px 1px 1px cd-palette($cd-shadow, 4019);
+				color: cd-palette($cd-color, 1001);
+				cursor: pointer;
+				padding: 4px 10px;
+
+				&:hover {
+					opacity: .9;
+				}
+			}
 		}
 	}
 }

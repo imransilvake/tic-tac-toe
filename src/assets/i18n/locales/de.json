@@ -3,8 +3,8 @@
 	"O": "O",
 	"PLAYER_TURN_X": "Spieler Drehen: X",
 	"PLAYER_TURN_O": "Spieler Drehen: O1",
-	"PLAY_AGAIN": "Spiel Nochmal!",
+	"PLAY_AGAIN": "Spiel Nochmal",
 	"WINNER": "Gewinner",
-	"GOTO_START": "Gehen Sie zur Startposition",
-	"MOVE_TO_POSITION": "In Position bringen"
+	"GOTO_START": "Start",
+	"MOVE_TO_POSITION": "Step"
 }

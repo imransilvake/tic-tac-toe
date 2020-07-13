@@ -18,38 +18,58 @@ class Game extends Component {
 	}
 
 	render() {
-		const { history } = this.state;
-		const current = history[this.state.stepNumber];
+		const { history, xTurn, stepNumber } = this.state;
+		const current = history[stepNumber];
 		const winner = Game.calculateWinner(current.squares);
-		const resetBoard = (winner) ? <button type="button" onClick={this.resetGame}>{i18n.t('PLAY_AGAIN')}</button> : null;
+
+		// reset board
+		const resetBoard = (winner) ? (
+			<button type="button" onClick={this.resetGame}>{i18n.t('PLAY_AGAIN')}</button>
+		) : null;
+
+		// no winner
 		let status = `${i18n.t('WINNER')}: ${winner}`;
 		if (!winner) {
-			status = (this.state.xTurn) ? i18n.t('PLAYER_TURN_X') : i18n.t('PLAYER_TURN_O');
+			status = (xTurn) ?
+				(<span className="sc-turn-x">{i18n.t('PLAYER_TURN_X')}</span>) :
+				(<span className="sc-turn-0">{i18n.t('PLAYER_TURN_O')}</span>);
 		}
+
+		// moves
 		const moves = history.map((move, index) => {
 			const desc = index ? `${i18n.t('MOVE_TO_POSITION')}: ${index}` : i18n.t('GOTO_START');
-			return (
+			return history.length > 1 && (
 				<li key={index}>
-					<button type="button" onClick={() => this.jumpToStep(index)}>{desc}</button>
+					<button type="button"
+							onClick={() => this.jumpToStep(index)}>
+						{desc}
+					</button>
 				</li>
 			);
 		});
 
 		return (
 			<div className="cd-game-wrapper">
-				<section className="cd-menu">
-					<div className="cd-info">
-						<h2>Tic-Tac-Toe</h2>
-						<div className="cd-status">{status}</div>
-						<div className="cd-play-again">{resetBoard}</div>
-						<ul className="cd-moves">{moves}</ul>
-					</div>
-				</section>
 				<section className="cd-board">
+					{/* Title */}
+					<h2>Tic-Tac-Toe</h2>
+
+					{/* Status */}
+					<p className="cd-status">{status}</p>
+
+					{/* Board */}
 					<Board
 						squares={current.squares}
 						onClick={this.handleClickOnSquare}
 					/>
+				</section>
+
+				<section className="cd-options">
+					{/* History */}
+					<ul className="cd-moves">{moves}</ul>
+
+					{/* Play Again */}
+					<div className="cd-play-again">{resetBoard}</div>
 				</section>
 			</div>
 		);
@@ -100,7 +120,7 @@ class Game extends Component {
 		}
 
 		// set changes in the current board and save in history.
-		squares[index] = (this.state.xTurn) ? i18n.t('X') : i18n.t('O');
+		squares[index] = (xTurn) ? i18n.t('X') : i18n.t('O');
 		this.setState({
 			history: historyUpdate.concat([{
 				squares
