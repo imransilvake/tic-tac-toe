@@ -31,5 +31,11 @@ A Tic-Tac-Toe game developed using React.
 - [X] [Translation](https://github.com/i18next/react-i18next)
 
 
+## Requirements
+```
+node version 10
+```
+
+
 ## Information
 Check [React-Seed](https://github.com/imransilvake/React-Seed) to understand how to build and serve this project as well as how to use SCSS and JS linting.
